@@ -1,0 +1,41 @@
+<view class='container'>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}"></image>
+    <view class='info'>
+      <text class="userinfo-nickname">Hi，{{ userInfo.nickName }}</text>
+    </view>
+  </view>
+  <view class="user-menu">
+    <view class="item">
+      <navigator url="/pages/order/order" class="a">
+        <text class="icon order"></text>
+        <text class="txt">我的订单</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/checked/checked" class="a">
+        <text class="icon coupon"></text>
+        <text class="txt">已审核</text>
+      </navigator>
+    </view>
+    <view class="item no-border">
+      <navigator url="url" class="a">
+        <text class="icon gift"></text>
+        <text class="txt">未审核</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/ucenter/collect/collect" class="a">
+        <text class="icon address"></text>
+        <text class="txt">我的收藏</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/ucenter/footprint/footprint" class="a">
+        <text class="icon security"></text>
+        <text class="txt">我的足迹</text>
+      </navigator>
+    </view>
+    
+  </view>
+  </view>

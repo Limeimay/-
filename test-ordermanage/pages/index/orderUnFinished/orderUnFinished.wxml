@@ -1,0 +1,17 @@
+<view class='fixed'>
+  <view class='flex-row'>
+    <input placeholder='搜索' type='text' class='search' bindinput="bindKeyInput">{{myOrderInput}}</input>
+    <image src='../../images/btn1_query.png' class='icon' bindtap='searchOrder'></image>
+  </view>
+  <view wx:for="{{orders}}">
+
+    <view class='date'>{{item.date}}</view>
+    <view wx:for="{{item.detail}}" wx:for-item="detail" class='detailContainer border'>
+      <view>{{detail.code}}</view>
+      <view class='flex2'>
+        <view>{{detail.name}}</view>
+        <view>{{detail.number}}</view>
+      </view>
+    </view>
+  </view>
+  </view>

@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  padding: 0
+
+}
+.dingdanicon{
+  width: 36rpx;
+  height: 36rpx;
+}
+.title{
+  width: 40%;
+  margin-left: 10%
+}
+ .flex-row{
+  flex-direction: row;
+} 
+ .flex-column{
+  flex-direction: column
+} 
+.height100{
+  height: 100rpx;
+}
+.borderupdown{
+  border-top: 1px solid black;
+  border-bottom:1px solid black;
+}
+.borderdown{
+  border-bottom:1px solid black;
+}
+.textspace{
+  width: 50rpx;
+  text-align: center
+}
+.nexticon{
+  height: 40rpx;
+  width: 20rpx;
+  margin-right: 40rpx;
+}
+.container {
+  align-items: center;
+  justify-content: space-between;
+}
+

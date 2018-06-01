@@ -1,0 +1,72 @@
+<view class="title" class='borderupdown container title'>待审核：</view>
+<view class='container flex-row height100 borderdown' bindtap='getUndoUnCheck'>
+    <view class='container left-part flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view class='textleft'>
+        <text>未审核</text>
+      </view>
+      <view >
+        <text class='textspace'>6</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>
+  <view class='container flex-row height100 borderdown' bindtap='getUndoDisargeeCheck'>
+    <view class='container left-part flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view class='textleft'>
+        <text>审核不同意</text>
+      </view>
+      <view >
+        <text class='textspace'>2</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>
+  <view class='container flex-row height100 borderdown' bindtap='getUndoAntiCheck'>
+    <view class='container left-part flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view class='textleft'>
+        <text>反审核</text>
+      </view>
+      <view >
+        <text class='textspace'>3</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>
+  <view class="title" class='borderupdown container title'>已审核</view>
+  <view class='container flex-row height100 borderdown' bindtap='getDoneArgeeCheck'>
+    <view class='container left-part flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view class='textleft'>
+        <text>审核同意</text>
+      </view>
+      <view >
+        <text class='textspace'>12</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>
+  <view class='container flex-row height100 borderdown' bindtap='getDoneDisargeeCheck'>
+    <view class='container left-part flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view class='textleft'>
+        <text>审核不同意</text>
+      </view>
+      <view >
+        <text class='textspace'>1</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>

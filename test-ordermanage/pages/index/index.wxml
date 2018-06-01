@@ -1,0 +1,60 @@
+ <!-- <view class='container flex-column height100'>  -->
+  <view class='container flex-row height100 borderupdown' bindtap='getMyorder'>
+    <view class='container title flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view >
+        <text>我的订单</text>
+      </view>
+      <view >
+        <text class='textspace'>20</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>
+  <view class='container flex-row  height100 borderdown' bindtap='getOrderFinished'>
+    <view class='container title flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view >
+        <text>已结订单</text>
+      </view>
+      <view  class='textspace'>
+        <text>11</text>
+      </view>
+    </view>
+    <view>
+    <image src='../images/next.png' class='nexticon'></image>
+    </view>
+  </view>
+  <view class='container flex-row  height100 borderdown' bindtap='getOrderUnFinished'>
+    <view class='container title flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view >
+        <text>未结订单</text>
+      </view>
+      <view  class='textspace'>
+        <text>9</text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+    </view>
+    <view class='container flex-row  height100 borderdown' bindtap='createOrder'>
+    <view class='container title flex-row'>
+      <view >
+        <image src='../images/myorder.png' class='dingdanicon'></image>
+      </view>
+      <view >
+        <text>订单新增</text>
+      </view>
+      <view class='textspace'>
+        <text ></text>
+      </view>
+    </view>
+    <view><image src='../images/next.png' class='nexticon'></image></view>
+  </view>
+ <!-- </view>  -->

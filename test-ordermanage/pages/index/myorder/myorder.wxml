@@ -1,0 +1,18 @@
+<view class='search container flex-row spaceBetween'>
+  <input class='serach_view_show' type='text' placeholder='搜索'>{{searchCondition}}</input>
+  <image src='../../images/btn1_query.png' class='icon'></image>
+</view>
+<view class='container flex-column border'  wx:for="{{orders}}" wx:for-item="orders">
+  <view class='container flex-row paddingTop' >
+    <view class='detailContainer container flex-column  '>
+      <view class='paddingBottom'>订单号：{{orders.orderNo}}</view>
+      <view>订单金额：{{orders.price}}</view>
+    </view>
+    <view class='detailContainer container flex-column'>
+      <view class='paddingBottom'>客户姓名：{{orders.userName}}</view>
+      <view>电话号码：{{orders.mobile}}</view>
+      <view></view>
+    </view>
+  </view>
+  <view class='address paddingLeft'>地址：{{orders.address}}</view>
+</view>

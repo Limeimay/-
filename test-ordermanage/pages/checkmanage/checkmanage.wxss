@@ -1,0 +1,24 @@
+/* pages/checkmanage/checkmanage.wxss */
+.title{
+  font-size: 30rpx;
+  font-weight: bold;
+  background: lightgray;
+  height: 60rpx;
+}
+.dingdan{
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+.left-part{
+  width: 40%;
+  margin-left: 10%
+}
+.textleft{
+  text-align: left;
+  width: 200rpx;
+}
+.container {
+  align-items: center;
+  justify-content: space-between;
+}

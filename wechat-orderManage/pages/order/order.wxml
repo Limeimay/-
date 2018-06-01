@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="status-box">
+    <image src='http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/search2-2fb94833aa.png' class='queryIcon' bindtap='orderQuery'></image>
+    <view bindtap="statusTap" class="status-label {{index == currentIndex ? 'active' : ''}}" wx:for-items="{{statusType}}" wx:key="{{index}}" data-index="{{index}}">
+      {{item}}
+      <view class="{{tabClass[index]}}"></view>
+    </view>
+  </view>
+  <view hidden="{{currentIndex==0?false:true}}">
+    <scroll-view class="tableView" scroll-y="true" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower">
+      <view  wx:for="{{ orders }}" wx:for-item="order">
+        <view class="flexItem rowStyle tableViewCellHeader marginTop10" catchtap="goDeatailEvent">
+          <image class="orderImage marginLeft12" src="../images/dingdan.png"></image>
+          <label class=" fontSize14 fontBold">订单编号: {{order.orderNo }}</label>
+        </view>
+        <view class="flexItem rowStyle  personInfo" catchtap="goDeatailEvent">
+          <view class="flexItem rowStyle marginLeft12 centers">
+            <image class="userHeader" src="{{ url }}"></image>
+            <label class=" fontSize12">{{order.userName }}</label>
+          </view>
+          <view class="flexItem rowStyle marginRight12 centers" catchtap="callEvent">
+            <image class="call" src="../images/call.png"></image>
+            <label class=" fontSize12">{{order.mobile }}</label>
+          </view>
+        </view>
+        <view class="flexItem columnStyle tableViewCell" catchtap="goDeatailEvent">
+          <view class="flexItem rowStyle marginBottom10 cellStyle">
+            <label class=" fontSize12">金额</label>
+            <label class="fontSize14">{{order.price }}</label>
+          </view>
+          <view class="flexItem rowStyle marginBottom10 cellStyle">
+            <label class=" fontSize12">地址</label>
+            <label class=" fontSize12">{{order.address }} </label>
+          </view>
+        </view>
+        <!-- <view class="flexItem rowStyle centers orderStatus" catchtap="goDeatailEvent">
+      </view> -->
+      </view>
+    </scroll-view>
+  </view>
+  <view hidden="{{currentIndex==1?false:true}}">
+    已结订单
+  </view>
+  <view hidden="{{currentIndex==2?false:true}}">
+    未结订单
+  </view>
+</view>

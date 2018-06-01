@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/checkmanage/checkmanage",
+    "pages/logs/logs",
+    "pages/index/myorder/myorder",
+    "pages/index/orderFinished/orderFinished",
+    "pages/index/orderUnFinished/orderUnFinished",
+    "pages/index/ordernew/ordernew",
+    "pages/checkmanage/doneArgeeCheck/doneArgeeCheck",
+    "pages/checkmanage/doneDisargeeCheck/doneDisargeeCheck",
+    "pages/checkmanage/undoAntiCheck/undoAntiCheck",
+    "pages/checkmanage/undoDisargeeCheck/undoDisargeeCheck",
+    "pages/checkmanage/undoUnCheck/undoUnCheck",
+    "pages/checkmanage/checkDetail/checkDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#35495D",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#09BB07",
+    "backgroundColor": "",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订单查询",
+        "iconPath": "pages/images/order.png",
+        "selectedIconPath": "pages/images/order_r.png"
+      },
+      {
+        "pagePath": "pages/checkmanage/checkmanage",
+        "text": "审核作业",
+        "iconPath": "pages/images/money.png",
+        "selectedIconPath": "pages/images/money_r.png"
+      }
+    ]
+  }
+}

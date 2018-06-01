@@ -1,0 +1,30 @@
+<view class="top-tab flexItem flex-tab">
+  <view class="toptab flex-item {{currentNavtab==index ? 'active' : ''}}" wx:for="{{classify}}" data-idx="{{index}}" bindtap='switchTab'>
+    <text>{{item}}</text>
+  </view>
+</view>
+<view class='search container flex-row spaceBetween'>
+  <input class='serach_view_show' type='text' placeholder='搜索'>{{searchCondition}}</input>
+  <image src='../../images/btn1_query.png' class='icon'></image>
+</view>
+<view class='container flex-column' wx:for="{{orders}}" wx:for-item="orders" hidden='{{currentNavtab==0?"":true}}'>
+  <view class='date'>{{orders.date}}</view>
+  <view class='container flex-row detail spaceBetween' wx:for="{{orders.detail}}" wx:for-item="detail" catchtap='getDetail' 
+  data-args="{{detail}}">
+    <view class='container flex-column spaceBetween width60'>
+      <view>{{detail.number}}</view>
+      <view>{{detail.kind}},{{detail.company}}</view>
+    </view>
+    <view class='container flex-column spaceBetween'>
+    <view>
+      <view>{{detail.date}}</view>
+      <view>制单人：{{detail.maker}}</view>
+      </view>
+      <view></view>
+    </view>
+    <view>
+    <image src='../../images/next.png' class='arrow'></image>
+  </view>
+  </view>
+</view>
+<view hidden='{{currentNavtab==1?"":true}}'>按类别审核</view>

@@ -1,0 +1,72 @@
+.toptab.active {
+  font-weight: bold;
+  color: #ed7321;
+  border-bottom: solid 3px #ed7321;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.txtcenter {
+  text-align: center;
+}
+
+.top-tab {
+  width: 750rpx;
+  height: 100rpx;
+  background: white;
+  color: #545454;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.toptab {
+  border-bottom: solid 3px transparent;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out; /* Firefox 4 */
+  -webkit-transition: all 0.4s ease-in-out; /* Safari 和 Chrome */
+  -o-transition: all 0.4s ease-in-out; /* Opera */
+}
+
+.flexItem {
+  display: flex;
+}
+
+.flex-tab {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  flex-grow: 1;
+  text-align: center;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.date {
+  font-size: 20rpx;
+  color: black;
+  height: 14px;
+  background: lightgray;
+}
+.spaceBetween{
+  justify-content: space-between
+}
+.alignCenter{
+  align-content: center;
+}
+.detail{
+  padding: 20rpx;
+  font-size: 26rpx;
+  border-bottom: 1rpx dashed gray;
+}

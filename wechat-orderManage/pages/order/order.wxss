@@ -1,0 +1,183 @@
+.container{
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.status-box{
+    width:100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+}
+.status-box .queryIcon{
+  height: 35rpx;
+  width: 35rpx;
+  margin-left: 20rpx;
+
+}
+.status-box .status-label{
+    width: 150rpx;
+    height: 100%;
+    text-align: center;
+    font-size:28rpx;
+    color:#353535;
+    box-sizing: border-box;
+    position: relative;
+}
+.status-box .status-label.active{
+    color:#C80433;
+    border-bottom: 6rpx solid #C80433;
+}
+.status-box .status-label .red-dot{
+    width: 16rpx;
+    height: 16rpx;
+    position: absolute;
+    left: 125rpx;
+    top:20rpx;
+    background-color: #f04f3a;
+    border-radius: 50%;
+}
+.rowStyle {
+    flex-direction: row;
+}
+.flexItem {
+    display: flex;
+}
+.tableViewCellHeader {
+    height: 35px;
+    align-items: center;
+    border-bottom: solid #ccc 1px;
+    background-color: white;
+}
+.marginTop10 {
+    margin-top: 20px;
+}
+.marginLeft12 {
+    margin-left: 12px;
+}
+
+.marginRight12 {
+    margin-right: 12px;
+}
+
+.marginBottom10 {
+    margin-bottom: 10px;
+}
+
+/*diffStyle*/
+.container {
+    padding: 0;
+    height: 100%;
+}
+
+.menu {
+    background-color: white;
+}
+
+.orderMenu {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.line {
+    width: 36px;
+    height: 2px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 6px;
+    background-color: #ed7321;
+}
+
+.orderImage {
+    width: 10px;
+    height: 11px;
+    margin-right: 5px;
+}
+.tableViewCell {
+    padding-right: 12px;
+    padding-top: 15px;
+    padding-left: 12px;
+    background-color: white;
+    /* border-bottom: dashed #ccc 1px; */
+}
+
+tableViewCellStyle {
+    background-color: white;
+}
+
+.cellStyle {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personInfo {
+    width: 100%;
+    height: 80rpx;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: dashed #ccc 1px;
+}
+
+.userHeader {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.call {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    margin-right: 5px;
+}
+
+.orderStatus {
+    width: 100%;
+    height: 44px;
+    background-color: white;
+}
+
+.statusImage {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.statusText {
+    color: #999;
+}
+
+.tableView {
+    width: 750rpx;
+    height: auto;
+    margin-top: 20rpx;
+}
+.tableView:first-child{
+  margin-top: 60rpx;
+}
+.columnStyle {
+    flex-direction: column;
+}
+.fontSize10 {
+    font-size: 10px;
+}
+
+.fontSize14 {
+    font-size: 14px;
+    
+}
+.fontBold{
+  font-weight: bold
+}
+
+.fontSize14 {
+    font-size: 14px;
+}

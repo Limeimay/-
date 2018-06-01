@@ -1,0 +1,14 @@
+<view class='checkBtn' bindtap="check">审核</view>
+<view class="top-tab flexItem flex-tab">
+  <view class="toptab flex-item {{currentNavtab==index ? 'active' : ''}}" wx:for="{{content}}" data-idx="{{index}}" bindtap='switchTab'>
+    <text>{{item}}</text>
+  </view>
+</view>
+<view>
+  <view wx:for="{{orderDtl}}" class='container flex-column spaceBetween'>
+    <view class='container flex-row'>
+      <view>{{item.name}}</view>
+      <view>{{item.value}}</view>
+    </view>
+  </view>
+</view>

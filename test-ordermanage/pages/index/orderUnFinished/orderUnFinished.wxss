@@ -1,0 +1,51 @@
+/* pages/index/orderUnFinished/orderUnFinished.wxss */
+/* pages/index/myorder/myorder.wxss */
+
+.date {
+  font-size: 20rpx;
+  color: black;
+  height: 14px;
+  background: lightgray;
+}
+
+.detailContainer {
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.border {
+  border-bottom: 1rpx dashed lightgray;
+}
+
+.fixed {
+  box-shadow: 0 2px 2px #bebebe;
+   /* position: fixed;  */
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.icon{
+
+  width: 50rpx;
+  height: 50rpx;
+  padding: 15rpx 40rpx;
+  border: 1rpx solid black;
+  background: lightgray;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.search{
+  border:1rpx solid grey;
+  height:80rpx;
+  width: 80%
+}
